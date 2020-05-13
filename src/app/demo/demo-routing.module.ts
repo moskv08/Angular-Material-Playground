@@ -5,7 +5,7 @@ import { FlexboxComponent } from './flexbox/flexbox.component';
 
 const routes: Routes = [
   { path: 'buttons', component: ButtonsComponent },
-  { path: 'flexbox', component: FlexboxComponent },
+  { path: 'flexbox', component: FlexboxComponent }, 
   { path: '**', redirectTo: 'buttons' } 
 ];
 
