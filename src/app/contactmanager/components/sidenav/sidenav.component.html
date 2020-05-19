@@ -1,7 +1,5 @@
 <mat-drawer-container class="app-sidenav-container" autosize>
-  <mat-drawer #sidenav class="app-sidenav" 
-  [mode]="isScreenSmall() ? 'over' : 'side'"
-  [opened]="!isScreenSmall()">
+  <mat-drawer #sidenav class="app-sidenav" [mode]="isScreenSmall() ? 'over' : 'side'" [opened]="!isScreenSmall()">
 
     <mat-toolbar color="primary">My Contacts</mat-toolbar>
     <mat-list role="list">
@@ -17,11 +15,9 @@
     <!-- Toolbar component at the top -->
     <app-toolbar (toggleSidenav)="sidenav.toggle()"></app-toolbar>
     <!-- Child components of contactmanager app -->
-    <router-outlet></router-outlet>
-
-    <!-- <button type="button" mat-button (click)="sidenav.toggle()">
-      Toggle sidenav
-    </button> -->
+    <div class="wrapper">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 
 </mat-drawer-container>
