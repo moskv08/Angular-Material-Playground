@@ -10,6 +10,7 @@ import { ContactmanagerAppComponent } from './contactmanager-app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
+import { UserService } from './services/user.service';
 
 // Routes
 const routes: Routes = [
@@ -29,6 +30,9 @@ const routes: Routes = [
     FlexLayoutModule,
     FormsModule,
     RouterModule.forChild(routes),
-  ]
+  ],
+  providers: [
+    UserService,
+  ],
 })
 export class ContactmanagerModule { }
