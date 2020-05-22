@@ -11,6 +11,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { UserService } from './services/user.service';
+import { HttpClientModule } from '@angular/common/http';
 
 // Routes
 const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
   declarations: [ContactmanagerAppComponent, ToolbarComponent, SidenavComponent, MainContentComponent],
   imports: [
     CommonModule,
+    HttpClientModule,
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
