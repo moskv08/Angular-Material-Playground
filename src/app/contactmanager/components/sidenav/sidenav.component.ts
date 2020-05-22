@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { Observable } from 'rxjs';
 import { User } from '../../models/user';
+import { Router } from '@angular/router';
+import { MatSidenav } from '@angular/material/sidenav';
 
 const WIDTH_BREAKPOINT = 720;  
 
@@ -15,14 +17,19 @@ export class SidenavComponent implements OnInit {
   private mediaMatcher: MediaQueryList = matchMedia(`(max-width: ${WIDTH_BREAKPOINT}px)`);
   $users: Observable<User[]>;
 
-  constructor(private userservice: UserService) { }
+  constructor(private userservice: UserService, private router: Router) { }
+
+  @ViewChild(MatSidenav) sidenav: MatSidenav;
 
   ngOnInit(): void {
     this.$users = this.userservice.users;
     this.userservice.loadAllUsers();
 
-    this.$users.subscribe(data => {
-      console.log(data);
+    // Subscribe to be able to close the navigation in mobile mode
+    this.router.events.subscribe(() => {
+      if (this.isScreenSmall()) {
+        this.sidenav.close();
+      }
     });
   }
 
