@@ -13,6 +13,7 @@ import { MainContentComponent } from './components/main-content/main-content.com
 import { UserService } from './services/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NotesComponent } from './components/notes/notes.component';
+import { ContactDialogComponent } from './contact-dialog/contact-dialog.component';
 
 // Routes
 const routes: Routes = [
@@ -26,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ContactmanagerAppComponent, ToolbarComponent, SidenavComponent, MainContentComponent, NotesComponent],
+  declarations: [ContactmanagerAppComponent, ToolbarComponent, SidenavComponent, MainContentComponent, NotesComponent, ContactDialogComponent],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -37,6 +38,6 @@ const routes: Routes = [
   ],
   providers: [
     UserService,
-  ],
+  ]
 })
 export class ContactmanagerModule { }
