@@ -20,7 +20,7 @@ export class UserService {
     this._users = new BehaviorSubject<User[]>([]);
   }
 
-  // Allow components to subscribe to behavior subject
+  // Allow components to subscribe to data changes through observable
   get users(): Observable<User[]> {
     return this._users.asObservable();
   }
