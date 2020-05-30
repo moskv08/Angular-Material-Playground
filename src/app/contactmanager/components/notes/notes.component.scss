@@ -8,3 +8,8 @@ table {
   font-size: 14px;
   width: 100%;
 }
+
+// Table feature: Sorting
+th.mat-sort-header-sorted {
+  color: black;
+}
