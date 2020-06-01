@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ContactDialogComponent } from '../../contact-dialog/contact-dialog.component';
+import { ContactDialogComponent } from '../../components/contact-dialog/contact-dialog.component';
 
 @Component({
   selector: 'app-toolbar',
