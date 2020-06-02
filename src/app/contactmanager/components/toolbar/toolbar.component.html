@@ -11,7 +11,8 @@
   </button>
   <mat-menu #menu="matMenu">
     <button mat-menu-item (click)="openNewContactDialog()">New Contact</button>
-    <button mat-menu-item>Exit</button>
+    <button mat-menu-item (click)="toggleTheme.emit()">Toggle Theme</button>
+    <button mat-menu-item (click)="toggleDirection.emit()">Toggle Direction</button>
   </mat-menu>
 
 </mat-toolbar>

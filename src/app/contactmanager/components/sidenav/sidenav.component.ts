@@ -16,6 +16,8 @@ export class SidenavComponent implements OnInit {
 
   private mediaMatcher: MediaQueryList = matchMedia(`(max-width: ${WIDTH_BREAKPOINT}px)`);
   $users: Observable<User[]>;
+  isDarkTheme: boolean = false;
+  dir: string = 'ltr';
 
   constructor(private userservice: UserService, private router: Router) { }
 
@@ -31,6 +33,15 @@ export class SidenavComponent implements OnInit {
         this.sidenav.close();
       }
     });
+  }
+
+  toggleTheme(): void {
+    this.isDarkTheme = !this.isDarkTheme;
+  }
+
+  toggleDirection(): void {
+    this.dir = this.dir == 'ltr'? 'rtl' : 'ltr';
+    this.sidenav.toggle().then(() => this.sidenav.toggle());
   }
 
   isScreenSmall(): boolean {
