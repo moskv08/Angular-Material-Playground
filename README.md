@@ -1,27 +1,14 @@
-# AngularMaterial
+# Angular 9 - Material Playground
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+This Angular 9 **Contact Web Application** was designed based on the *[Material Design](https://material.angular.io/)*.
+It is a playground application that demonstrates what *Material Design* is capable of doing in a short amount of development time. This application is:
 
-## Development server
+- Responsive in design for mobile & desktop versions
+- Reusing a variarity of defined components
+- Using a customize theme based on defined blueprints
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![Demo](/img/demo_1.png)
 
-## Code scaffolding
+### Demo Application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Have a look on your own by opening the [demo application](#).
