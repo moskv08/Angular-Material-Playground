@@ -11,4 +11,4 @@ It is a playground application that demonstrates what *Material Design* is capab
 
 ### Demo Application
 
-Have a look on your own by opening the [demo application](#).
+Have a look on your own by opening the [demo application](https://robbmoskv.github.io/Angular-Material-Playground/contactmanager).
