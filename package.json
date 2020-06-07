@@ -5,9 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ng test ",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "thug": "npm run test --watch=false --no-progress --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {
