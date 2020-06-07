@@ -18,12 +18,6 @@ module.exports = function (config) {
     coverageIstanbulReporter: {
       dir: require('path').join(__dirname, './coverage/AngularMaterial'),
       reports: ['html', 'lcovonly', 'text-summary'],
-      customLaunchers: {
-        ChromeHeadlessNoSandbox: {
-          base: 'ChromeHeadless',
-          flags: ['--no-sandbox']
-        }
-      },
       fixWebpackSourcePaths: true
     },
     reporters: ['progress', 'kjhtml'],
@@ -31,7 +25,13 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadlessNoSandbox'],
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
     singleRun: false,
     restartOnFileChange: true
   });
