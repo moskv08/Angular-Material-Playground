@@ -46,6 +46,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "baseHref": "https://RobbMoskv.github.io/Angular-Material-Playground/",
               "budgets": [{
                   "type": "initial",
                   "maximumWarning": "2mb",
