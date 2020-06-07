@@ -7,8 +7,7 @@
     "build": "ng build",
     "test": "ng test ",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "thug": "npm run test --watch=false --no-progress --browsers=ChromeHeadless"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
