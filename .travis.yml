@@ -1,9 +1,10 @@
-dist: trusty
-sudo: false
+# dist: trusty
+dist: xenial
+# sudo: false -> deprecated
 
 language: node_js
 node_js:
-  - '8'
+  - '10'
 
 addons:
   apt:
